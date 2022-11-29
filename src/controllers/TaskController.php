@@ -9,13 +9,13 @@ class TaskController extends Controller
      * afficher la liste des tâches
      * @return void
      */
-    public function index() :void
+    public function index(): void
     {
         // instance
         $task = new Task();
         // récupérer la liste des tâches
 
-        $tasks = $task->findAllBy(['id_user' => 1],'Task');
+        $tasks = $task->findAllBy(['id_user' => 2], 'Task');
         $message = 'hello';
         /*
          * [
@@ -34,11 +34,11 @@ class TaskController extends Controller
     public function delete()
     {
 
-        echo "Task controller ".__FUNCTION__;
+        echo "Task controller " . __FUNCTION__;
     }
 
     public function edit()
     {
-        echo "Task controller ".__FUNCTION__;
+        echo "Task controller " . __FUNCTION__;
     }
 }

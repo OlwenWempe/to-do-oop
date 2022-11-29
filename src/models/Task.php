@@ -20,7 +20,7 @@ class Task  extends Model
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -98,7 +98,7 @@ class Task  extends Model
      * Insérer une tache dans la BDD
      * @return int|false l'id du dernier élément inséré ou false dans le cas d'échec
      */
-    public function insert() : int|false
+    public function insert(): int|false
     {
         $stmt = $this->pdo->prepare("INSERT INTO task (`name`, `to_do_at`, `is_done`,`id_user`) VALUES (:name, :to_do_at, :is_done, :id_user)");
 
@@ -111,6 +111,4 @@ class Task  extends Model
 
         return $this->pdo->lastInsertId();
     }
-
 }
-
