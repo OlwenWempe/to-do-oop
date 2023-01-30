@@ -7,7 +7,7 @@
 2. git add .   => prendre en considération tous les fichiers du projet
 3. git commit -m "first commit" => commentaire expliquant le code ajouté
 4. git branch -M main
-5. git remote add origin https://github.com/Forticas/to_do_poo.git
+5. git remote add origin https://github.
 6. git push -u origin main
 
 ## en cours
